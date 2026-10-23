@@ -12,7 +12,8 @@ export default defineConfig({
   title: '个人知识库',
   description: '数学 · 语文 · 经济学 · 会计学 学习笔记与资料整理',
   base: BASE_PATH,
-  cleanUrls: true,
+  // GitHub Pages 静态服务不支持无后缀 URL 重写，链接统一用 .html 形式
+  cleanUrls: false,
   lastUpdated: true,
   // README.md 是项目说明，不参与站点构建（否则会被渲染成 /README.html 页面）
   srcExclude: ['README.md'],
