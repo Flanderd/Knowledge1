@@ -1,0 +1,100 @@
+/**
+ * 主题色板系统
+ * ------------------------------------------------------------------
+ * 通过 <html data-palette="emerald|violet|ocean|obsidian"> 切换，
+ * 未设置属性时使用默认翡翠绿。深色模式由 VitePress 的 .dark 类控制，
+ * 两个维度（色板 × 明暗）相互独立、自由组合。
+ *
+ * 只需覆盖 --vp-c-brand-1/2/3/soft：
+ * 按钮、链接、行内代码、tip/note 容器、侧边栏高亮都会自动跟随。
+ */
+
+/* ===================== 翡翠绿（默认） ===================== */
+:root,
+[data-palette='emerald'] {
+  --vp-c-brand-1: #067a52;
+  --vp-c-brand-2: #12a06c;
+  --vp-c-brand-3: #16ab77;
+  --vp-c-brand-soft: rgba(22, 171, 119, 0.14);
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #067a52 15%, #16ab77 90%);
+}
+
+.dark,
+.dark[data-palette='emerald'] {
+  --vp-c-brand-1: #48d6a5;
+  --vp-c-brand-2: #29bd8b;
+  --vp-c-brand-3: #159a6d;
+  --vp-c-brand-soft: rgba(72, 214, 165, 0.16);
+
+  --vp-home-hero-name-background: linear-gradient(120deg, #48d6a5 15%, #16ab77 90%);
+}
+
+/* ===================== 罗兰紫 ===================== */
+[data-palette='violet'] {
+  --vp-c-brand-1: #7c3aed;
+  --vp-c-brand-2: #8b5cf6;
+  --vp-c-brand-3: #9d6ff9;
+  --vp-c-brand-soft: rgba(139, 92, 246, 0.14);
+
+  --vp-home-hero-name-background: linear-gradient(120deg, #7c3aed 15%, #a78bfa 90%);
+}
+
+.dark[data-palette='violet'] {
+  --vp-c-brand-1: #b4a0fb;
+  --vp-c-brand-2: #9d6ff9;
+  --vp-c-brand-3: #8b5cf6;
+  --vp-c-brand-soft: rgba(180, 160, 251, 0.16);
+
+  --vp-home-hero-name-background: linear-gradient(120deg, #b4a0fb 15%, #8b5cf6 90%);
+}
+
+/* ===================== 深海蓝 ===================== */
+[data-palette='ocean'] {
+  --vp-c-brand-1: #0b5c8e;
+  --vp-c-brand-2: #1a7ab5;
+  --vp-c-brand-3: #2f93cc;
+  --vp-c-brand-soft: rgba(47, 147, 204, 0.14);
+
+  --vp-home-hero-name-background: linear-gradient(120deg, #0b5c8e 15%, #2f93cc 90%);
+}
+
+.dark[data-palette='ocean'] {
+  --vp-c-brand-1: #6cb8e8;
+  --vp-c-brand-2: #4a9fd6;
+  --vp-c-brand-3: #2f86bd;
+  --vp-c-brand-soft: rgba(108, 184, 232, 0.16);
+
+  --vp-home-hero-name-background: linear-gradient(120deg, #6cb8e8 15%, #2f93cc 90%);
+}
+
+/* ===================== 曜石黑 ===================== */
+[data-palette='obsidian'] {
+  --vp-c-brand-1: #2b3440;
+  --vp-c-brand-2: #46525f;
+  --vp-c-brand-3: #5b6875;
+  --vp-c-brand-soft: rgba(43, 52, 64, 0.12);
+
+  --vp-home-hero-name-background: linear-gradient(120deg, #2b3440 15%, #5b6875 90%);
+}
+
+.dark[data-palette='obsidian'] {
+  --vp-c-brand-1: #d7dde3;
+  --vp-c-brand-2: #aab4be;
+  --vp-c-brand-3: #8b95a0;
+  --vp-c-brand-soft: rgba(215, 221, 227, 0.14);
+
+  --vp-home-hero-name-background: linear-gradient(120deg, #e2e7ec 15%, #8b95a0 90%);
+
+  /* 曜石黑的深色模式：比默认更深的近黑背景，突出曜石质感 */
+  --vp-c-bg: #0c0f12;
+  --vp-c-bg-alt: #0e1216;
+  --vp-c-bg-soft: #151a1e;
+  --vp-c-bg-elv: #171d22;
+  --vp-c-divider: #272f36;
+  --vp-c-border: #2f3840;
+  --vp-c-gutter: #0c0f12;
+  --vp-code-block-bg: #111519;
+  --vp-code-tab-divider: #272f36;
+}

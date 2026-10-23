@@ -1,0 +1,17 @@
+{
+  "name": "knowledge-base",
+  "version": "1.0.0",
+  "private": true,
+  "description": "个人知识库站点：数学、语文、经济学、会计学",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "@mdit/plugin-katex": "^1.1.4",
+    "katex": "^0.19.0",
+    "vitepress": "^1.6.4"
+  }
+}
